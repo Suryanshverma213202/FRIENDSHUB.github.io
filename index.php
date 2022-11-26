@@ -49,15 +49,15 @@ if(isset($_SESSION['Auth']) && $user['ac_status']==1 && !$pagecount){
  
   
 }elseif(isset($_GET['signup'])){
-    showPage('header',['page_title'=>'Pictogram - SignUp']);
+    showPage('header',['page_title'=>'FRIENDSHUB - SignUp']);
     showPage('signup');
 }elseif(isset($_GET['login'])){
    
-    showPage('header',['page_title'=>'Pictogram - Login']);
+    showPage('header',['page_title'=>'FRIENDSHUB - Login']);
     showPage('login');
 }elseif(isset($_GET['forgotpassword'])){
     
-    showPage('header',['page_title'=>'Pictogram - Forgot Password']);
+    showPage('header',['page_title'=>'FRIENDSHUB - Forgot Password']);
     showPage('forgot_password');
 }else{
     if(isset($_SESSION['Auth']) && $user['ac_status']==1){
@@ -72,7 +72,7 @@ if(isset($_SESSION['Auth']) && $user['ac_status']==1 && !$pagecount){
         showPage('header',['page_title'=>'Blocked']);
         showPage('blocked');
     }else{
-        showPage('header',['page_title'=>'Pictogram - Login']);
+        showPage('header',['page_title'=>'FRIENDSHUB - Login']);
         showPage('login');
     }
   
